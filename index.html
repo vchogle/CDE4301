@@ -231,12 +231,20 @@
         <p>The system architecture of the virtual patient training environment is organized into two primary components: a Python-based backend that manages AI-driven dialogue and behavioral logic, and a Unity-based frontend that presents the immersive VR experience. These components are integrated via a WebSocket communication interface, enabling seamless real-time conversations between the dental student and the AI-simulated patient.</p>
         <div id="sub-section-6-header-1">
           <h3>6.1 Backend (Python)</h3>
-          <p>The backend is designed with modularity and extensibility in mind, enabling swift iteration of behavior scripts, patient personas, and interaction pipelines. It includes the following core modules:</p>
+          <p>The backend is designed with modularity and extensibility in mind, enabling swift iteration of behavior scripts, patient personas, and interaction pipelines. It includes the following core modules shown in Table 2.</p>
+          <figure>
+            <img src="./assets/table2.png" alt="Table 2" style="max-width: 100%; height: auto;" />
+            <figcaption><i>Table 2: Files in the knowledge chatbot backend and their purpose</i></figcaption>
+          </figure>
           <p>This backend is lightweight and portable, supporting deployment both on a local workstation and cloud servers. Patient behavior and speech style can be customized by modifying prompt templates and fallback logic, making the system easily adaptable for simulating other patient archetypes (e.g., anxious, stoic, uncooperative).</p>
         </div>
         <div id="sub-section-6-header-2">
           <h3>6.2 Frontend (Unity 3D)</h3>
-          <p>The Unity frontend renders a high-fidelity virtual dental clinic where students interact with the patient using a VR headset. It comprises the following subsystems:</p>
+          <p>The Unity frontend renders a high-fidelity virtual dental clinic where students interact with the patient using a VR headset. It comprises the following subsystems shown in Table 3.</p>
+          <figure>
+            <img src="./assets/table3.png" alt="Table 3" style="max-width: 100%; height: auto;" />
+            <figcaption><i>Table 3: Subsystems in the Unity frontend and their purpose</i></figcaption>
+          </figure>
         </div>
         <div id="sub-section-6-header-3">
           <h3>6.3 Communication Workflow</h3>
@@ -268,7 +276,7 @@
               <li>System-level instructions defining Shibing’s personality, behavior, and constraints.</li>
               <li>Emotional flags indicating confusion, defensiveness, or frustration in response to specific user inputs.</li>
             </ul>
-            <p>The prompt design was refined over multiple versions, with improvements focusing on character consistency, fallback responses, and persona realism. Fallback expressions such as “Huh? What you mean lah?” or “Aiyo, I forget liao leh…” were added to simulate dementia-related confusion and miscommunication.</p>        
+            <p>The prompt design was refined over multiple versions, with improvements focusing on character consistency, fallback responses, and persona realism. Fallback expressions such as “Huh? What you mean lah?” or “Aiyo, I forget liao leh…” were added to simulate dementia-related confusion and miscommunication. A summary has been presented in Appendix A</p>        
           </div>
           <div id="sub-section-7-header-1-2">
             <h4>7.1.2 Technical Setup</h4>
@@ -279,12 +287,22 @@
                 <li><code>messages.txt</code>: Contained fallback responses for miscommunication scenarios.</li>
                 <li><code>websocket.py</code>: Reserved for integration with frontend interfaces during testing.</li>
               </ul>
-              <p>A basic interface was used to simulate input/output, enabling structured evaluations of dialogue flow, memory integrity, and emotional variability. Insights from this stage directly informed system design choices in the second prototype.</p>
+              <p>A basic interface was used to simulate input/output, enabling structured evaluations of dialogue flow, memory integrity, and emotional variability. Insights from this stage directly informed system design choices in the second prototype. </p>
+              <p>The knowledge chatbot can be seen in Figure 1.</p>
+              <figure>
+                <img src="./assets/chatbot.jpg" alt="Fig 1" style="max-width: 100%; height: auto;" />
+                <figcaption><i>Figure 1: Screenshot of the knowledge chatbot</i></figcaption>
+              </figure>
           </div>
         </div>
         <div id="sub-section-7-header-2">
           <h3>7.2 Prototype 2: Immersive VR Patient (Ahmed)</h3>
           <p>The second prototype built upon the previous chatbot logic and deployed it within an immersive VR environment. A virtual patient named Ahmed was developed to support real-time, speech-based interaction in a simulated dental consultation setting. Ahmed was similar to Shibing, the change was that he was a Singaporean Malay individual instead. This prototype tested end-to-end integration of voice capture, LLM-based response generation, avatar behavior, and emotion-driven animation within a clinical training context.</p>
+          <p>A screenshot of the VR set-up has been shown in Figure 2.</p>
+          <figure>
+            <img src="./assets/patient.jpg" alt="Figure 2" style="max-width: 100%; height: auto;" />
+            <figcaption><i>Figure 2: Screenshot of the Unity 3D frontend of Ahmed</i></figcaption>
+          </figure>
           <div id="sub-section-7-header-2-1">
             <h4>7.2.1 System Architecture</h4>
             <p>The system architecture comprises a Python backend and a Unity frontend, connected via WebSocket for real-time interaction. This modular design enables scalable updates across the conversational logic and visual rendering components.</p>
@@ -417,6 +435,14 @@ https://www.moh.gov.sg/others/resources-and-statistics/action-plan-for-successfu
     </div>
   </div>
 
+  <div id="appendix" class="appendix">
+    <sl-divider></sl-divider>
+    <h2>Appendix</h2>
+    <h3>Appendix A</h3>
+    <figure>
+      <img src="./assets/appendix_a.png" alt="Appendix A" style="max-width: 100%; height: auto;" />
+    </figure>
+  </div>
   <!-- This is the code to display the scroll to top button for ergonomic -->
   <!-- You can leave it as it is, or if you don't like its aesthetics you can also just delete it, -->
   <!-- but it might reduce the user experience. -->

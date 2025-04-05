@@ -23,3 +23,14 @@ p {
   text-align: justify;
   font-size: 1.1rem;
 }
+
+figure {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
