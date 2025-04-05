@@ -36,7 +36,7 @@
 <body>
   <div class="content">
     <h1>VR‐406: AI simulated patient for dentistry student communication training in VR</h1>
-    <h4>By: Chogle Vidita Nikhil</h4>
+    <h4>By: Chogle Vidita Nikhil - Year 4 Biomedical Engineering</h4>
 
     <!-- This is the team member component use to display details about your team members -->
 
@@ -48,23 +48,26 @@
       <h2>Table of Contents</h2>
       <sl-tree>
         <sl-tree-item>
-          <a href="#section-header-1">1. Objective and Scope</a>
+          <a href="#acknowledgements">Acknowledgements</a>
+        </sl-tree-item>
+        <sl-tree-item>
+          <a href="#section-header-1">1. Introduction</a>
         </sl-tree-item>
 
         <sl-tree-item>
-          <a href="#section-header-2">2. Context of Problem</a>
+          <a href="#section-header-2">2. Problem Definition and Context</a>
         </sl-tree-item>
 
         <sl-tree-item>
-          <a href="#section-header-3">3. Value Proposition</a>
+          <a href="#section-header-3">3. Literature Review and Context</a>
         </sl-tree-item>
 
         <sl-tree-item>
-          <a href="#section-header-4">4. Project Goal</a>
+          <a href="#section-header-4">4. Concept Development</a>
         </sl-tree-item>
 
         <sl-tree-item expanded>
-          <a href="#section-header-5">5. Concept Development</a>
+          <a href="#section-header-5">5. Design Specifications</a>
           <sl-tree-item>
             <a href="#sub-section-5-header-1">5.1 Literature Review</a>
           </sl-tree-item>
@@ -80,219 +83,178 @@
         </sl-tree-item>
 
         <sl-tree-item>
-          <a href="#section-header-6">6. Current Progress on Deliverables</a>
+          <a href="#section-header-6">6. System Architecture</a>
         </sl-tree-item>
 
         <sl-tree-item>
-          <a href="#section-header-7">7. Awareness of Shortcomings</a>
+          <a href="#section-header-7">7. Prototyping and Implementation</a>
         </sl-tree-item>
 
         <sl-tree-item>
-          <a href="#section-header-8">8. Project Plan</a>
+          <a href="#section-header-8">8. Testing and Evaluation</a>
+        </sl-tree-item>
+      
+        <sl-tree-item>
+          <a href="#section-header-9">9. Fulfilment of Deliverables</a>
+        </sl-tree-item>
+
+        <sl-tree-item>
+          <a href="#section-header-10">10. Reflections and Future Work</a>
+        </sl-tree-item>
+
+        <sl-tree-item>
+          <a href="#section-header-11">11. Conclusion</a>
         </sl-tree-item>
 
         <sl-tree-item expanded>
           <a href="#references">References</a>
         </sl-tree-item>
       </sl-tree>
+
+      <sl-tree-item expanded>
+        <a href="#appendix">Appendix</a>
+      </sl-tree-item>
+    </sl-tree>
     </div>
     <sl-divider></sl-divider>
 
     <div>
 
       <!-- This is an example of what a section might look like -->
+      <div id="acknowledgements">
+        <h2>Acknowledgements</h2>
+        <p>I would like to sincerely thank my CDE4301 project supervisor, Professor Khoo Eng Tat, for his guidance and support throughout the development of this project. I am also grateful to the NUS Faculty of Dentistry, especially Professor Wong Mun Loke, for his insights and kind cooperation during the course of this work. I would like to thank Aiden Koh from the Immersive Reality Lab for his technical support and for helping me get started with the tools and systems used in this project.</p>
+        <p>I would also like to thank Harshita and Jiali from the CDE3301 project for their support this semester, especially during the prototype demonstration. Lastly, I am thankful to the dental students who took the time to try out the prototype and share their feedback. It played an important role in shaping the direction of the final version.</p>
+
       <div id="section-header-1">
-        <h2> 1. Objective and Scope </h2>
-        <p>
-          By 2030, 1 in 4 Singaporeans will be aged 65 or older, leading to an increase in geriatric patients requiring 
-          effective and timely medical care, particularly in dentistry (<i>ACTION PLAN FOR SUCCESSFUL AGEING 2023</i>, 2024). 
-          In geriatric dentistry, age-related factors and behaviors—such as care rejection, aggression, and agitation—can complicate treatment. 
-          Poor communication with elderly patients often results in diminished care quality and unsuccessful dental outcomes. 
-          The main issue addressed in this project is the limited exposure and communication training dentistry students 
-          receive when interacting with geriatric patients.
-        </p>
-        <p>
-          This project aims to develop an innovative solution integrating artificial intelligence (AI) and virtual reality (VR) 
-          to create an AI-simulated patient. This solution will enhance the communication training of dentistry students by immersing them 
-          in a realistic dental office setting where they can interact with a 3D virtual patient displaying verbal and non-verbal cues. 
-          This report outlines the problem, functional requirements for the solution, progress made this semester, 
-          and a project plan to achieve the objectives by the end of CDE4301.
-        </p>
-        <p>
-          In 2023, a previous project involved students utilizing a platform with a virtual patient presented in a 2D format. 
-          However, this approach faced several challenges. The virtual patient platform is no longer in use, prompting the need for alternative solutions. 
-          Additionally, the 2D animated patient lacked the immersive experience required to effectively engage dentistry students. 
-          The large language model used in the project also struggled with providing accurate responses, 
-          highlighting the need for enhanced training data to improve its performance.
-        </p>
-        <p>
-          This project addresses these limitations by introducing a VR component, enabling students to interact with a 3D virtual patient within a realistic dental office environment. This immersive setting not only facilitates direct communication between the student and patient but also allows the student to interpret non-verbal cues, which are critical for accurate diagnosis and treatment planning.
-        </p>
+        <h2> 1. Introduction </h2>
+          <p>By 2030, 1 in 4 Singaporeans will be aged 65 or older, leading to an increase in geriatric patients requiring effective and timely medical care, particularly in dentistry (ACTION PLAN FOR SUCCESSFUL AGEING 2023, 2024). In geriatric dentistry, age-related factors and behaviors, such as care rejection, aggression, and agitation, can complicate treatment. Poor communication with elderly patients often results in diminished care quality and unsuccessful dental outcomes. The main issue addressed in this project is the limited exposure and communication training dentistry students receive when interacting with geriatric patients.</p>
+          <p>This project aims to develop an innovative solution integrating artificial intelligence (AI) and virtual reality (VR) to create an AI-simulated patient. This solution will enhance the communication training of dentistry students by immersing them in a realistic dental office setting where they can interact with a 3D virtual patient. This report outlines the background and context of the problem, a review of related work, the development of the proposed concept, detailed design specifications, prototyping and implementation progress, system testing and evaluation, and a summary of how the key project deliverables have been fulfilled. It concludes with reflections on the project and recommendations for future work.</p>
+          <p>In 2023, a previous project involved students utilizing a platform with a virtual patient presented in a 2D format. However, this approach faced several challenges. The virtual patient platform is no longer in use, prompting the need for alternative solutions. Additionally, the 2D animated patient lacked the immersive experience required to effectively engage dentistry students. The large language model used in the project also struggled with providing accurate responses, underscoring the need for enhanced training data to improve its performance.</p>
+          <p>This project addresses these limitations by introducing a virtual reality (VR) component, enabling students to interact with a 3D virtual patient within a realistic dental office environment. This immersive setting enables direct, spoken interaction between the dental student and a simulated geriatric patient, allowing the student to practise communication strategies essential for accurate diagnosis and treatment planning.</p>
     </div>
 
     <br />
     <sl-divider></sl-divider>
     <div>
       <div id="section-header-2">
-        <h2>2. Context of Problem</h2>
-        <p>
-          The NUS Faculty of Dentistry currently employs standardized patients (SPs) as part of its curriculum to improve students' 
-          communication skills. A standardized patient is an actor who has been meticulously trained to portray a real patient 
-          so convincingly that even a skilled clinician cannot distinguish the simulation from an actual patient encounter (Hillier et al., 2024). 
-          This hands-on approach allows dentistry students to practice their interpersonal and diagnostic skills in a controlled, 
-          simulated environment, preparing them for real-world scenarios.  
-        </p>
-        <p>
-          However, while effective, this method has significant drawbacks. SPs are resource-intensive, requiring actors to be rigorously 
-          trained to simulate a wide range of conditions accurately. Coordinating SP sessions involves scheduling complexities, 
-          logistical constraints, and significant financial costs. Moreover, SP interactions are limited to specific scenarios, which can restrict 
-          the variety of patient behaviors and cases that students can experience. These limitations highlight the need for an alternative, scalable solution that 
-          maintains the benefits of SP-based training while addressing its resource-heavy nature.  
-          This project focuses on improving communication training for dentistry students, with an emphasis on interactions with geriatric patients. Effective communication is critical in ensuring accurate diagnoses and successful treatment outcomes, particularly for older patients who may have complex medical and behavioral needs. By introducing an AI-simulated patient in a VR environment, the project seeks to offer an immersive and diverse training experience that goes beyond what SPs can provide.  
-        </p>
-        <p>
-          In the broader context, this project also aims to support the healthcare sector's response to Singapore's aging population. 
-          By equipping future dentists with advanced communication skills and experience interacting with geriatric patients, 
-          the initiative contributes to better dental care outcomes and improved quality of life for elderly individuals. 
-          Additionally, the adoption of AI and VR technology in educational training promotes innovation, potentially setting a 
-          precedent for other areas of healthcare education. 
-          Finally, reducing the reliance on SPs not only saves resources but also creates a scalable and adaptable training framework that can be expanded 
-          to cover a wider range of patient cases and scenarios in the future.
-        </p>
+        <h2>2. Problem Definition and Context</h2>
+        <div id="sub-section-2-header-1">
+          <h3>2.1 Problem Definition</h3>
+          <p>The NUS Faculty of Dentistry currently employs SPs as part of its curriculum to improve students' communication skills. A standardized patient is an actor who has been meticulously trained to portray a real patient so convincingly that even a skilled clinician cannot distinguish the simulation from an actual patient encounter (Hillier et al., 2024). This hands-on approach allows dentistry students to practice their interpersonal and diagnostic skills in a controlled, simulated environment, preparing them for real-world scenarios. </p>
+
+          <p>However, while effective, this method has significant drawbacks. SPs are resource-intensive, requiring actors to be rigorously trained to simulate a wide range of conditions accurately. Coordinating SP sessions involves scheduling complexities, logistical constraints, and significant financial costs. Moreover, SP interactions are limited to specific scenarios, which can restrict the variety of patient behaviors and cases that students can experience. These limitations highlight the need for an alternative, scalable solution that maintains the benefits of SP-based training while addressing its resource-heavy nature. </p> 
+          
+          <p>This project focuses on improving communication training for dentistry students, with an emphasis on interactions with geriatric patients. Effective communication is critical in ensuring accurate diagnoses and successful treatment outcomes, particularly for older patients who may have complex medical and behavioral needs. By introducing an AI-simulated patient in a virtual reality (VR) environment, the project seeks to offer an immersive and diverse training experience that goes beyond what SPs can provide.  </p>
+          
+          <p>In the broader context, this project also aims to support the healthcare sector's response to Singapore's aging population. By equipping future dentists with advanced communication skills and experience interacting with geriatric patients, the initiative contributes to better dental care outcomes and improved quality of life for elderly individuals. Additionally, the adoption of AI and VR technology in educational training promotes innovation, potentially setting a precedent for other areas of healthcare education. Finally, reducing the reliance on SPs not only saves resources but also creates a scalable and adaptable training framework that can be expanded to cover a wider range of patient cases and scenarios in the future.</p>
+          
+      </div>
+      <div id="sub-section-2-header-2">
+        <h3>2.2 Value Proposition</h3>
+        <p>To address the current state in dental education, this project introduces an AI-simulated patient in a virtual reality environment designed to provide dentistry students with immersive communication training focused on geriatric care.</p>
+        <p>The platform enables students to engage in realistic, voice-based conversations with an elderly patient within a fully immersive dental clinic setting. This approach creates a safe and controlled environment where students can build confidence and refine their interpersonal skills, particularly when navigating the complexities of age-related behaviors and communication barriers.</p>
+        <p>By offering consistent and repeatable training experiences, the solution reduces reliance on standardized patients, making communication training more scalable, cost-effective, and accessible across institutions.</p>
+        <p>Through realistic interactions, this platform equips future dentists with the empathy, adaptability, and communication proficiency needed to deliver effective and compassionate care to an aging population.</p>
       </div>
 
       <br />
       <sl-divider></sl-divider>
       <div id="section-header-3">
-        <h2> 3. Value Proposition </h2>
-        <p>
-          To address the current state, I will develop an AI simulated patient in a virtual reality environment that provides dentistry students with immersive training, enabling them 
-to effectively communicate with geriatric patients. 
-        </p>
-        <p>
-          The platform will allow students to interact with various archetypes of elderly patients, exposing them to diverse personalities and communication styles. This exposure will better prepare students for real-life interactions in a safe and controlled setting. Additionally, it will reduce reliance on SPs, offering a more affordable, consistent, and accessible training solution.
-        </p>
-        <p>
-          Finally, students will receive immediate, actionable feedback after each session, enabling them to refine their skills. By enhancing communication training, this platform will prepare future dentists to deliver compassionate, effective care to an aging population.
-        </p>
-    </div> 
+        <h2> 3. Literature Review and Context </h2>
+        <div id="sub-section-3-header-1">
+          <h3>3.1 Literature Review</h3> 
+          <p>To address the limitations of standardized patients, I began by conducting a literature review to explore current approaches for simulating these patient interactions using AI and large language models (also known as LLM). I examined several papers and selected one published before the introduction of LLMs and one published afterward.</p>
+          <p>In the pre-LLM phase, a virtual patient named Julia was developed to address dental problems. An informal-language chatbot was designed to answer both clinical and non-clinical questions. In a descriptive cross-sectional study, 193 students engaged with the AI chatbot over several weeks to practice diagnosing clinical cases. However, this approach had its limitations. The chatbot technology did not allow dental students to directly interact with a patient, failing to simulate the appropriate clinical environment. Additionally, students expressed a preference for face-to-face interactions over using the chatbot, indicating a gap in the immersive experience (Suárez et al., 2022).</p>
+          <p>In the post-LLM phase, the Furhat Robot was introduced as a more advanced virtual patient. It featured an animated face projected onto a translucent mask and supported multiple speech synthesis options, allowing it to adopt various identities, including different genders, ages, and ethnicities. The system was developed using the FurhatSDK and integrated with OpenAI's GPT-3.5-turbo model for conversational capabilities. Despite these advancements, limitations persisted. Users often experienced confusion when the robot heard their utterance but failed to respond immediately. Moreover, as a static robot, it lacked the ability to convey hand gestures or other non-verbal cues, which are essential components of human interaction (Borg et al., 2024).</p>
+        </div>
+        <div id="sub-section-3-header-2">
+          <h3>3.2 Past Project</h3> 
+          <p>To develop this solution, past methodologies were examined, including a project conducted last year that introduced desktop simulation software to help dental students improve communication with virtual geriatric patients. The solution consisted of various modules, such as InteractAI as the platform for the virtual patient, Microsoft Azure for real-time speech-to-text and text-to-speech capabilities powered by neural networks, OpenAI GPT-3.5 for response generation, and OpenAI GPT-4.0 for post-conversation analysis. However, the solution faced several limitations. The virtual patient platform, InteractAI, is no longer in use, necessitating the exploration of alternative platforms. Additionally, the virtual patient was presented in 2D, which lacked the immersive environment needed to engage dentistry students effectively. Furthermore, the large language model required more accurate responses, highlighting the need for additional data to improve its training and performance.</p>
+        </div>
+        <div id="sub-section-3-header-3">
+          <h3>3.3 Key Insights Behind Concept Development</h3>
+          <p>The literature and related work shaped the direction of this project significantly. Reviewing both pre- and post-LLM virtual patient systems, it became clear that earlier chatbot-based platforms helped lay the groundwork but lacked the realism and interactivity needed for clinical communication training. For instance, the Julia chatbot (Suárez et al., 2022) allowed students to engage with simple case prompts via text, but the absence of embodiment and spoken dialogue reduced authenticity and engagement.</p>
+          <p>Newer systems like the Furhat Robot (Borg et al., 2024) introduced more advanced interaction using animated faces and GPT-3.5 integration. However, they still had limitations such as response delays, limited expressiveness, and a static physical setup. These issues showed that while LLMs had improved, they needed a more immersive and emotionally rich platform to be effective in education.</p> 
+          <p>Separately, past project work with InteractAI, Azure speech tools, and 2D simulations highlighted the same problem. Students lost interest without a strong sense of presence. The flat 2D environment and lack of embodied behavior made it difficult to simulate emotional or cognitive conditions like dementia. Early prompt testing also revealed that LLMs require domain-specific tuning to stay consistent in character over time.</p>
+          <p>Together, these findings pointed to the need for a system that combines immersive realism, expressive communication, and LLM adaptability. This directly shaped the decision to build a VR-based platform powered by GPT-4o, hosted in a 3D clinical setting with simulated patient personas. It became clear that effective communication training needs more than just conversation. Emotional tone and memory-driven behavior are essential for creating a realistic and educationally meaningful experience.</p>
+        </div>
+      </div>
 
     <br />
     <sl-divider></sl-divider>
     <div id="section-header-4">
-      <h2> 4. Project Goal </h2>
-      <p>
-        The primary goal is to develop a fully functional prototype of the AI simulated patient and conduct a user study in April 2025 with dentistry students during their 
-        communication with patients module. 
-        This study will evaluate whether an AI-simulated patient in a virtual reality environment is more effective for 
-        training communication skills compared to traditional SPs. By comparing these methods, the goal is to determine the most effective 
-        approach for enhancing students' ability to engage with geriatric patients. 
-      </p>
-      <p>
-        To prepare for the study, I will secure all necessary approvals, ensuring ethical considerations around student participation 
-        are addressed. During this process, I will also finalize the study's methodology. 
-        In parallel, I will focus on developing a reliable, user-friendly prototype of the VR-based AI patient, 
-        conducting usability tests to ensure the platform is ready for student use and meets the desired effectiveness before the study begins.
-      </p>
+      <h2> 4. Concept Development </h2>
+      <div id="sub-section-4-header-1">
+        <h3>4.1 Design Rationale and System Goals</h3> 
+        <p>This project started from a clear gap in how dental students are trained to communicate with older patients, especially those showing signs of cognitive decline. While standardized patients offer useful exposure, they are often limited in availability, consistency, and cost. Similarly, most existing digital tools do not provide emotionally realistic interactions or a convincing clinical environment. The main goal of this system is to simulate a realistic, responsive geriatric patient who can engage students in meaningful conversations. This includes presenting challenges commonly seen in older patients, such as forgetfulness, anxiety, or confusion, and encouraging students to adapt their tone, phrasing, and empathy accordingly.</p>
+        <p>My aim was to create a learning tool that combines conversational AI with virtual reality in a way that feels lifelike and educational. I wanted students to be able to speak naturally to a virtual patient, receive emotionally appropriate responses, and feel as though they were in an actual dental consultation. Rather than just building another chatbot, the system is designed to simulate a full dental visit with a believable elderly character who has their own personality, backstory, and cognitive challenges.</p>
+      </div>
+      <div id="sub-section-4-header-2">
+        <h3>4.2 Exploration of Concept Alternatives</h3> 
+        <p>During the early design phase, I explored multiple directions for the system. One of the first key decisions was choosing the platform: web, desktop, or VR. While web-based and desktop solutions were more accessible and technically straightforward, they lacked the level of immersion needed for realistic training. Previous projects using 2D virtual patients, such as those built on InteractAI, mostly involved typing and reading text, which did not reflect how actual dental consultations take place.</p>
+        <p>After discussions with the Immersive Reality Lab, I decided to pursue a VR-based approach. VR provided a stronger sense of presence by situating students in a simulated clinic environment, making it easier to support authentic communication training.</p>
+        <p>For the patient design, I experimented with a range of geriatric personas, including a cooperative elderly patient, one who appeared more anxious, and one exhibiting early signs of dementia. Testing these different archetypes helped clarify how each would require unique prompting strategies, emotional expressions, and memory behavior. I also compared scripted dialogue trees with open-ended conversations powered by large language models. The natural flow and adaptability of LLMs made them a better fit for simulating complex, real-time communication scenarios.</p>
+      </div>
+      <div id="sub-section-4-header-3">
+        <h3>4.3 Justification for Final Concept Direction</h3> 
+        <p>After testing initial versions using the VR system developed for cabin crew training and reviewing feedback from previous projects, I committed to a VR-based concept powered by a large language model. Using GPT-4o mini allows the virtual patient to respond in a way that feels emotionally aware and naturally conversational. This was important for simulating geriatric patients who may struggle with memory, repeat themselves, or display shifts in mood. These are moments where students need to respond with empathy, and the system is designed to support that learning experience.</p>
+        <p>VR was chosen to provide a fully immersive environment where students can practise not just verbal communication, but also situational awareness and emotional presence. While the focus of this iteration is on conversation, the 3D clinical setting adds depth and realism to the experience. It helps students feel like they are in a real dental consultation, with the opportunity to adjust their responses based on how the patient is behaving or reacting.</p>
+        <p>In summary, this concept was selected because it strikes the right balance between realism, flexibility, and educational value. It supports scalable and repeatable training without losing the human complexity that is often missing from traditional tools. With a foundation built on GPT-4o, Unity 3D, and validated communication scripts, the system can be expanded in the future to include more patient profiles, feedback tools, or adaptive difficulty based on performance.</p>
+      </div>
   </div> 
 
   <br />
   <sl-divider></sl-divider>
   <div id="section-header-5">
-    <h2> 5. Concept Development </h2>
+    <h2> 5. Design Specifications </h2>
 
     <div id="sub-section-5-header-1">
-      <h3>5.1 Literature Review</h3>
-
-      <p>
-        To address the limitations of standardized patients, I began by conducting a literature review to explore current approaches for simulating these patient interactions using AI and large language models (also known as LLM). I examined several papers and selected one published before the introduction of LLMs and one published afterward.
-      </p>
-
-      <p>
-        In the pre-LLM phase, a virtual patient named Julia was developed to address dental problems. An informal-language chatbot was designed to answer both clinical and non-clinical questions. In a descriptive cross-sectional study, 193 students engaged with the AI chatbot over several weeks to practice diagnosing clinical cases. However, this approach had its limitations. The chatbot technology did not allow dental students to directly interact with a patient, failing to simulate the appropriate clinical environment. Additionally, students expressed a preference for face-to-face interactions over using the chatbot, indicating a gap in the immersive experience (Suárez et al., 2022).
-      </p>
-
-      <p>
-        In the post-LLM phase, the Furhat Robot was introduced as a more advanced virtual patient. It featured an animated face projected onto a translucent mask and supported multiple speech synthesis options, allowing it to adopt various identities, including different genders, ages, and ethnicities. The system was developed using the FurhatSDK and integrated with OpenAI's GPT-3.5-turbo model for conversational capabilities. Despite these advancements, limitations persisted. Users often experienced confusion when the robot heard their utterance but failed to respond immediately. Moreover, as a static robot, it lacked the ability to convey hand gestures or other non-verbal cues, which are essential components of human interaction (Borg et al., 2024).
-      </p>
-
-      <p>
-        To develop an effective solution, I propose leveraging virtual reality (VR) to overcome the limitations identified in these studies. VR can provide an immersive environment for dentistry students, enabling them to interact directly with a 3D virtual patient that incorporates both verbal and non-verbal cues. This interaction would take place within a realistic simulation of a dentist's office, offering students a practical and engaging way to replicate real-life experiences.
-      </p>
+      <h3>5.1 Functional Requirements</h3>
+      <p>The solution is designed to simulate realistic communication between dentistry students and elderly patients through the integration of AI and virtual reality. Students should be able to speak naturally to the virtual patient using a microphone, while the AI responds using spoken dialogue generated by a large language model and delivered via a text-to-speech engine. These interactions must take place within a realistic dental scenario, with the system maintaining context and expressing appropriate emotional tones. The VR environment should resemble an actual dental clinic to help students build familiarity with a professional treatment setting. The system should also be able to simulate a range of communication styles, such as cooperative, confused, or anxious patients, to reflect real-world diversity. After each session, students should receive structured feedback aligned with communication assessment rubrics, covering aspects like clarity, empathy, and the use of follow-up questions. The virtual patient should also exhibit non-verbal behaviors, such as facial expressions or hesitation, to further reinforce realistic communication.</p>
     </div>
-
     <div id="sub-section-5-header-2">
-      <h3>5.2 Past Project</h3>
-      <p>
-        To develop this solution, past methodologies were examined, including a project conducted last year that introduced desktop simulation software to help dental students improve communication with virtual geriatric patients. The solution consisted of various modules, such as InteractAI as the platform for the virtual patient, Microsoft Azure for real-time speech-to-text and text-to-speech capabilities powered by neural networks, OpenAI GPT-3.5 for response generation, and OpenAI GPT-4.0 for post-conversation analysis. However, the solution faced several limitations. The virtual patient platform, InteractAI, is no longer in use, necessitating the exploration of alternative platforms. Additionally, the virtual patient was presented in 2D, which lacked the immersive environment needed to engage dentistry students effectively. Furthermore, the large language model required more accurate responses, highlighting the need for additional data to improve its training and performance.
-      </p>
+      <h3>5.2 Non-Functional Requirements</h3>
+      <p>In addition to core features, the system must meet several non-functional expectations. Low latency is essential. AI responses should ideally occur within two seconds to maintain natural conversation flow. The platform should also be scalable, allowing future integration of new patient profiles and training scenarios. The AI must remain in character and follow a structured conversational flow, especially for sensitive personas like Shibing, who simulates dementia. Usability is another key consideration; students should be able to use the system without extensive onboarding, and the VR experience should be smooth and intuitive. Finally, reliability is critical. The system must run consistently during sessions without crashing or interrupting the training process.</p>
     </div>
-
-      <div id="sub-section-5-header-3">
-        <h3>5.3 Functional Requirements</h3>
-        <p>
-          To develop my solution, I was introduced to key components through Aiden, a researcher in Prof. Khoo’s lab. The system consists of two main elements: the knowledge chatbot backend and the immersive 3D environment.
-        </p>
-        <p>
-          The knowledge chatbot backend, developed in Prof. Khoo’s lab, using Python, integrates OpenAI’s GPT-4o mini model. When a user inputs a patient description, the chatbot simulates a conversation with a virtual geriatric patient. However, for the chatbot to provide accurate and contextually relevant responses, it requires additional training. Currently, the system lacks sufficient patient archetypes, limiting its ability to offer varied and reliable interactions. Expanding the training data with diverse geriatric patient profiles will enhance the chatbot’s performance and make the conversations more realistic.
-        </p>
-        <p>
-          To create the immersive 3D environment, Unity 3D will be used as the platform for developing virtual reality applications. In this setting, students will engage with a virtual geriatric patient in a realistic dental office environment. I currently have access to an immersive training environment originally designed for cabin crew training using MetaQuest. To adapt this for dentistry training, I will modify the characters to represent geriatric patients and adjust the setting to reflect a dental office. This tailored environment will offer an engaging, patient-centered simulation that allows students to effectively practice their communication skills in a realistic context.
-        </p>
-      </div>
-
-      <div id="sub-section-5-header-4">
-        <h3>5.4 Key Features</h3>
-        <p>
-          Based on the functional requirements, the concept design will focus on creating a VR-based geriatric patient and integrating a speech component to allow dentistry students to practice and refine their communication skills.
-        </p>
-        <p>
-          To enhance this solution, I plan to incorporate the following features into the immersive environment:
-        </p>
-        <ul>
-          <li>Create a dashboard in Python to provide analytics for the students to continually improve their skills - allowing for immediate and consistent feedback for their learning.</li>
-          <li>Fine-tune the large language model (LLM) to deliver more accurate and contextually appropriate responses by incorporating additional data. This will be achieved through the inclusion of validated dentist-patient scripts provided by the Faculty of Dentistry.</li>
-          <li>Create diverse geriatric patient archetypes, based on a template from the Faculty of Dentistry, to ensure a variety of interactions that reflect real-world scenarios.</li>
-        </ul>
+    <div id="sub-section-5-header-3">
+      <h3>5.3 Technical Constraints and Assumptions</h3>
+      <p>The system is built using Unity 3D and deployed on MetaQuest VR headsets. AI responses are powered by the GPT-4o mini model, accessed via API, which requires a stable internet connection for reliable performance. The original codebase provided was optimized for Windows, so early development included resolving compatibility issues across platforms. The AI training data is based on validated dentist-patient communication scripts provided by the Faculty of Dentistry. This version of the prototype assumes that users have basic familiarity with conversational English and are comfortable using standard VR controls.</p>
+    </div>
       </div>
 
       <br />
       <sl-divider></sl-divider>
       <div id="section-header-6">
-        <h2> 6. Current Progress on Deliverables </h2>
-        <p>
-          This semester, my primary focus has been on understanding the core problem, researching relevant literature, and gaining a deeper understanding of how the technology developed by the lab functions.
-        </p>
-        <p>
-          I initially met with Prof. Wong and Prof. Khoo in early September to clarify the project requirements and discuss the process for involving dental students in the user study. 
-        </p>
-        <p>
-          Throughout September and October, I held weekly meetings with Prof. Khoo and, later, Aiden to update them on my progress and gather feedback. I documented the meeting minutes in a spreadsheet, which allowed me to track next steps and clearly define the project deliverables.
-        </p>
-        <p>
-          In November, I am focusing on developing a proof-of-concept prototype using the provided code to create a virtual geriatric patient and its environment. Additionally, I am working on finalizing the user study details by reviewing the protocol with both Prof. Khoo and Prof. Wong to ensure it meets the requirements for approval by the Departmental Ethics Review Committee (DERC).
-        </p>
+        <h2> 6. System Architecture </h2>
+        <p>The system architecture of the virtual patient training environment is organized into two primary components: a Python-based backend that manages AI-driven dialogue and behavioral logic, and a Unity-based frontend that presents the immersive VR experience. These components are integrated via a WebSocket communication interface, enabling seamless real-time conversations between the dental student and the AI-simulated patient.</p>
+        <div id="sub-section-6-header-1">
+          <h3>6.1 Backend (Python)</h3>
+          <p>The backend is designed with modularity and extensibility in mind, enabling swift iteration of behavior scripts, patient personas, and interaction pipelines. It includes the following core modules:</p>
+          <p>This backend is lightweight and portable, supporting deployment both on a local workstation and cloud servers. Patient behavior and speech style can be customized by modifying prompt templates and fallback logic, making the system easily adaptable for simulating other patient archetypes (e.g., anxious, stoic, uncooperative).</p>
+        </div>
+        <div id="sub-section-6-header-2">
+          <h3>6.2 Frontend (Unity 3D)</h3>
+          <p>The Unity frontend renders a high-fidelity virtual dental clinic where students interact with the patient using a VR headset. It comprises the following subsystems:</p>
+        </div>
+        <div id="sub-section-6-header-3">
+          <h3>6.3 Communication Workflow</h3>
+          <p>The complete interaction pipeline follows this sequence:</p>
+          <ol>
+            <li>The student speaks to the virtual patient through the VR headset.</li>
+            <li>Unity records the audio, sends it to Azure STT, and transmits the transcript to the Python backend.</li>
+            <li>The backend formats the input with patient-specific behaviors and sends a prompt to GPT-4o.</li>
+            <li>GPT-4o generates a response, which is returned as text.</li>
+            <li>The backend converts the response into audio using Azure TTS and sends it to Unity.</li>
+            <li>Unity plays the audio and animates the patient’s face based on embedded emotional cues.</li>
+          </ol>
+        </div>
       </div> 
 
       <br />
       <sl-divider></sl-divider>
       <div id="section-header-7">
         <h2> 7. Awareness of Shortcomings </h2>
-        <p>
-          This semester, I had faced a few challenges in my work that helped me to understand my strengths and weaknesses in this process. 
-        </p>
-        <p>
-          Firstly, I faced a steep learning curve with Unity 3D, as I had no prior experience with the software. Using materials provided by Prof. Khoo and Aiden, I was able to familiarize myself with the application and grasp the nuances of the project. Additionally, while I had some experience with Python, I was unfamiliar with its use in the context of large language models (LLMs), which posed another challenge. To address these technical gaps, I will be taking online courses during the winter break to improve my coding skills and seeking assistance from my peers in Computer Science, as well as from Aiden in Prof. Khoo’s lab. 
-        </p>
-        <p>
-          Secondly, as the code is primarily written for Windows, integrating it into my laptop has been a significant challenge. However, I am enjoying the process, as it forces me to deepen my understanding of Python and Unity 3D. To mitigate this issue, I plan to borrow a Windows laptop from the lab, which will minimize the need for excessive debugging.
-        </p>
-        <p>
-          Thirdly, I was unsure of the direction to take in this project, which led to uncertainty on what I can achieve. To address this issue, I had regular meetings with Prof Khoo to update my progress. I plan to also ensure my doubts are clarified promptly, which I did hesitate towards the beginning of this semester.
-        </p>
-        <p>
-          Lastly, liaising with the Faculty of Dentistry to get information regarding the patient communication module took considerable time. To ensure more timely communication in the future, I plan to allocate adequate time for feedback, such as allowing up to two weeks for responses
-        </p>
       </div> 
 
       <br />
